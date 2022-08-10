@@ -1,0 +1,34 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+main{
+min-height: 100vh;
+background: linear-gradient(to top,#000,#fff);
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Share Tech Mono";
+}
+
+input{
+width: 100%;
+border-radius: 2rem;
+border: none;
+height: 1rem;
+}
+button{
+    border-radius: 2rem;
+    border: none;
+    margin-left: 10rem;
+    
+}
+
+/* .background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
