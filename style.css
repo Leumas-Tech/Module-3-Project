@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+main {
+    background: url(backgroundImage.jpg) no-repeat center center/ cover;
+    /* width: 100vh; */
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Share Tech Mono";
+}
+
+section {
+    display: block;
+}
+
+.searchBox {
+    width: 50vh;
+}
+
+input {
+    background-color: rgb(255, 255, 255);
+    /* color:  */
+    font-weight: bold;
+    font-size: 1.5em;
+    /* text-align: center; */
+    width: 75%;
+    margin: 10px 5px 5px 5px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+    box-shadow: 10px 10px 10px grey;
+    height: 2rem;
+    opacity: 0.7;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    border-radius: 5px;
+    border: solid 1px black;
+    box-shadow: 10px 10px 10px grey;
+    margin: 5px 5px 10px 5px;
+    padding: 5px 10px 5px 10px;
+    opacity: 0.7;
+
+}
+
+button:hover {
+    /* font-size: 1.2em; */
+    opacity: 9;
+    cursor: pointer;
+}
