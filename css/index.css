@@ -1,7 +1,10 @@
 @media only screen and (max-width: 600px) {
-
+    body{
+        height: 100vh;
+    }
     .content{
-        margin-top: 5vh
+        margin-top: 5vh;
+
  
     }
     h1{
@@ -92,4 +95,11 @@ h1{
 }
 label{
     margin-top: 1vh;
+}
+
+.glassDisplay{
+    background: linear-gradient(to top right, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+    border-radius: 50px;
+    height: 500px;
+
 }
