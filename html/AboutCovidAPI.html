@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
+    <!-- Link for Nav Menu -->
+    <link rel ="stylesheet" href="/css/navMenu.css">
     <!-- Background CSS -->
     <link rel ="stylesheet" href="/css/background.css">
     <!-- Bootstrap -->
@@ -23,17 +25,57 @@
    </div>
 
    <!-- This is for the animated background -->
-   <li></li>
-   <li></li>
-   <li></li>
-   <li></li>
-   <li></li>
-   <li></li>
-   <li></li>
-   <li></li>
-   <li></li>
-   <li></li> 
+   <li class="background"></li>
+   <li class="background"></li>
+   <li class="background"></li>
+   <li class="background"></li>
+   <li class="background"></li>
+   <li class="background"></li>
+   <li class="background"></li>
+   <li class="background"></li>
+   <li class="background"></li>
+   <li class="background"></li> 
         </div>
     </main>
+    <div class="navMenu">
+        <ul class="navigation">
+         <li class="active">
+             <a href="">
+                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                 <span class="text">Home</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
+                 <span class="text">Covid Data</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <span class="icon"><ion-icon name="search-outline"></ion-icon></ion-icon></span>
+                 <span class="text">Search Facilities</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
+                 <span class="text">Trending</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
+                 <span class="text">Symptom Checker</span>
+             </a>
+         </li>
+     </ul> 
+     </div>
+    <!-- Script for Icons, Must go on every page -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Script for the Navigation Menu -->
+    <!-- MUST GO ON EVERY PAGE -->
+    <script src="/java/navMenu.js"></script>
 </body>
 </html>

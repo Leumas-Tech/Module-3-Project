@@ -1,105 +1,13 @@
-@media only screen and (max-width: 600px) {
-    body{
-        height: 100vh;
-    }
-    .content{
-        margin-top: 5vh;
+*{
+    padding:0;
+    margin: 0;
 
- 
-    }
-    h1{
-        text-align: center;
-    }
-
-    form{
-        display: flex;
-        flex-direction: column;
-
-
-    }
-
-    .btn-outline-dark{
-        margin-top: 3vh;
-    }
-
-    .btn-group{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 10%;
-
-    }
-
-    label{
-        margin-top: 1vh;
-        
-    }
-
-    .commands{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about{
-
-        text-align: center;
-        margin-bottom: 5vh;
-    }
-
-    .btn-dark{
-        margin-top: 3%;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-p{
-    color: floralwhite;
-}
-
-.content{
-
-    margin-left: 5vh;
-    margin-right: 10vh;
-    
-}
-
-form{
-    margin-bottom: 3vh;
-}
-
-input:focus{
-    border: 3px solid red;
 }
 
 h1{
-    color:white;
+    color: white;
+    padding: 1rem;
 }
-.btn-group{
-    margin-left: 30%;
-
-}
-.btn-primary, .btn-secondary{
-   width: fit-content;
-}
-label{
-    margin-top: 1vh;
-}
-
-.glassDisplay{
-    background: linear-gradient(to top right, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
-    border-radius: 50px;
-    height: 500px;
-
+.searchBar{
+    padding: 5rem;
 }
