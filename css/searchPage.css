@@ -74,6 +74,7 @@ p{
 
     margin-left: 5vh;
     margin-right: 10vh;
+    margin-top: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,8 +83,8 @@ p{
 
 form{
     margin-bottom: 3vh;
+    width: 80%;
 }
-
 input:focus{
     border: 3px solid red;
 }
