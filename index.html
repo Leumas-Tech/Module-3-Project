@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/index.css">
     <!-- searchPAge CSS -->
     <link rel="stylesheet" href="./css/searchPage.css">
+    <link rel="stylesheet" href="./css/floatButton.css">
   <!-- BootStrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -33,10 +34,11 @@
           <button class="btn btn-outline-dark" onclick="covidData()" type="submit">Search</button>
         </form>
         <!-- For on the home page they can select what theyre seraching for to alternate between our API keys -->
-        <p>Browse by Country:</p>
+        <p>Browse by City or Country:</p>
         <div class="btn-group-horizontal" role="group" aria-label="Horizontal button group">
-          <button type="button" class="btn btn-dark">Total Cases</button>
-          <button type="button" class="btn btn-dark">Covid-19 Casualties</button>
+          <button type="button" class="btn btn-dark">Search Data</button>
+          <button type="button" class="btn btn-dark">Nearby Facilities</button>
+          <button type="button" class="btn btn-dark">Symptom Checker</button>
 
 
         </div>
@@ -93,12 +95,19 @@
      </li>
  </ul> 
  </div>
+<div class="floater">
+   <a href="#" class="float">
+  <i class="fa fa-plus my-float"></i>
+</a>
+</div>
+
+
 <!-- Script for Icons, Must go on every page -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!-- Script for the Navigation Menu -->
 <!-- MUST GO ON EVERY PAGE -->
-<script src="/java/navMenu.js"></script>
-  <script src="javaScript/script.js"></script>
+<script src="/JavaScript/navMenu.js"></script>
+
 </body>
 </html>
