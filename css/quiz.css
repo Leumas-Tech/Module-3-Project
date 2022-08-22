@@ -1,0 +1,61 @@
+body {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+  }
+  
+  [id="container"] {
+    width: 80vw;
+ 
+    color: white;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 2.6rem;
+    border: 2px solid white;
+  }
+  
+  header {
+    text-align: center;
+    border-bottom: #e7d8c9 dashed 1px;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header p {
+    padding: 0;
+    margin-top: 5px;
+    color: #000;
+  }
+  
+  input[type="submit"] {
+    background: white;
+    border: 0;
+    color: black;
+    padding: 10px 12px;
+    cursor: pointer;
+  }
+  
+  [id="results"] {
+    margin-top: 1rem;
+  }
+  
+  [id="results"] h3 {
+    background: #eee4e1;
+    padding: 10px;
+    margin: 10px 0;
+    color: #000;
+  }
+  
+  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .content{
+    margin-bottom: 5%;
+  }
