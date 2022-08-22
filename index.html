@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home page</title>
+  <title>Home Page</title>
   <!-- Background CSS -->
   <link rel="stylesheet" href="./css/background.css">
   <!-- navMenu CSS -->
   <link rel="stylesheet" href="./css/navMenu.css">
   <!-- Personal Page CSS -->
   <link rel="stylesheet" href="./css/index.css">
-    <!-- searchPAge CSS -->
-    <link rel="stylesheet" href="./css/searchPage.css">
-    <link rel="stylesheet" href="./css/floatButton.css">
+  <!-- searchPAge CSS -->
+  <link rel="stylesheet" href="./css/searchPage.css">
+  <link rel="stylesheet" href="./css/floatButton.css">
   <!-- BootStrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
 <body>
   <!-- Every page so we can have the animated background, we add a class area to a main and class circles to a div just like follows. And dont forget a bunch of LIs at the bottom. The link to the CSS that i Got this from is here. https://alvarotrigo.com/blog/animated-backgrounds-css/ -->
   <!-- I am also using Bootstrap 🙂 -->
-  <main class="area">
+
+  <!-- This Class is different on each page to present the different color background.. -->
+  <main class="area1">
     <div class="circles">
       <!-- Now we can put in the header and everything on the other pages -->
       <br>
@@ -39,8 +43,6 @@
           <button type="button" class="btn btn-dark">Search Data</button>
           <button type="button" class="btn btn-dark">Nearby Facilities</button>
           <button type="button" class="btn btn-dark">Symptom Checker</button>
-
-
         </div>
         <hr>
         <br>
@@ -61,53 +63,65 @@
       <li class="background"></li>
     </div>
   </main>
+  <!-- Page Navigation Starts Here! -->
   <div class="navMenu">
     <ul class="navigation">
-     <li class="active">
-         <a href="">
-             <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-             <span class="text">Home</span>
-         </a>
-     </li>
-     <li>
-         <a href="#">
-             <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
-             <span class="text">Covid Data</span>
-         </a>
-     </li>
-     <li>
-         <a href="#">
-             <span class="icon"><ion-icon name="search-outline"></ion-icon></ion-icon></span>
-             <span class="text">Search Facilities</span>
-         </a>
-     </li>
-     <li>
-         <a href="#">
-             <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
-             <span class="text">Trending</span>
-         </a>
-     </li>
-     <li>
-         <a href="#">
-             <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
-             <span class="text">Symptom Checker</span>
-         </a>
-     </li>
- </ul> 
- </div>
-<div class="floater">
-   <a href="#" class="float">
-  <i class="fa fa-plus my-float"></i>
-</a>
-</div>
+      <li class="active">
+        <a href="#">
+          <span class="icon">
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
+          <span class="text">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Module-3-Project/html/covidDataSearchPage.html">
+          <span class="icon">
+            <ion-icon name="medkit-outline"></ion-icon>
+          </span>
+          <span class="text">Covid-19 Data</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Module-3-Project/html/searchNearestHospital.html">
+          <span class="icon">
+            <ion-icon name="search-outline"></ion-icon>
+          </span>
+          <span class="text">Hospital Search</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Module-3-Project/html/SymptomChecker.html">
+          <span class="icon">
+            <ion-icon name="medkit-outline"></ion-icon>
+          </span>
+          <span class="text">Symptom Checker</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Module-3-Project/html/AboutCovidAPI.html">
+          <span class="icon">
+            <ion-icon name="star-outline"></ion-icon>
+          </span>
+          <span class="text">About Us</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="floater">
+    <a href="#" class="float">
+      <i class="fa fa-plus my-float"></i>
+    </a>
+  </div>
 
 
-<!-- Script for Icons, Must go on every page -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!-- Script for the Navigation Menu -->
-<!-- MUST GO ON EVERY PAGE -->
-<script src="/JavaScript/navMenu.js"></script>
+  <!-- Script for Icons, Must go on every page -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Script for the Navigation Menu -->
+  <!-- MUST GO ON EVERY PAGE -->
+  <script src="../javaScript/navMenu.js"></script>
 
 </body>
+
 </html>
