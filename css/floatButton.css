@@ -4,10 +4,13 @@
     height: 60px;
     top: 40px;
     right: 40px;
-    background-color: #747aed;
+    background-color: white;
     border-radius: 50px;
     text-align: center;
-    box-shadow: 3px 3px 3px white;
+    box-shadow: 8px 7px 5px 3px rgba(0,0,0,0.3);
+    display: flex;
+ 
+    justify-content: center;
   }
   
   .my-float {

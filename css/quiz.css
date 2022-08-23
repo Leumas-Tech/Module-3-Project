@@ -4,7 +4,7 @@ body {
     font-size: 14px;
   }
   
-  [id="container"] {
+  [id="quiz"] {
     width: 80vw;
  
     color: white;
@@ -57,5 +57,5 @@ body {
   }
 
   .content{
-    margin-bottom: 5%;
+
   }

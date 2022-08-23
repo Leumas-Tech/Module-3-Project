@@ -17,142 +17,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-<!-- Every page so we can have the animated background, we add a class area to a main and class circles to a div just like follows. And dont forget a bunch of LIs at the bottom. The link to the CSS that i Got this from is here. https://alvarotrigo.com/blog/animated-backgrounds-css/ -->
-<!-- I am also using Bootstrap :) -->
-        <main class="area">
-        <div class="circles">
-
-     
-                
-<!-- Now we can put in the header and everything on the other pages -->
-
-
-
-<br>
-
-<!-- This is so the user can type in what theyre seraching for. -->
-<div class="content">
-
-<h1>CovidExpress</h1>
-
-
-
-
-<!-- For on the home page they can select what theyre seraching for to alternate between our API keys -->
-<p>Symptoms Checker by non trained professionals:</p>
-
-
-
-<!--- Based on "Simple JavaScript Quiz" tutorial by Eduonix Learning Solutions --->
-
-<div id="container">
-    <header>
-      <h1>Covid Symptom Checker</h1>
-      <p>Im not a licensed doctor, but like these are the symptoms i would think someone with covid has. <strong>Covid-20 is no laughing matter. This is all strictly research intended.</strong></p>
-    </header>
-    <section>
-      <form name="quizForm" >
-        <h3>1. How are you feeling, on a scale of. 0 - 10 (0 being Black Plague) - (10 being "I feel like i can fight a wild buffalo in its natural habitat")</h3>
-        <input type="range" min ="0" max = "10"name="q1" value="0" steps = "10"id="q1a"><br>
-  
-  
-  
-        <h3>2. Lick the nearest toilet seat, did you taste anything?</h3>
-        <input type="radio" name="q2" value="a" id="q2a">a. No I tasted nothing<br>
-        <input type="radio" name="q2" value="b" id="q2b">b. Yes I taste....<br>
-  
-  
-        <h3>3. Whats your body temperature?..... in degrees Kelvin</h3>
-     
-        <input type="input" name="q3"  id="q3c"><br>
-  
-  
-        <h3>4. Is Ke$ha attractive?</h3>
-        <input type="radio" name="q4" value="a" id="q4a">a. Yes<br>
-        <input type="radio" name="q4" value="b" id="q4b">b. No<br>
-  
-        <h3>5. Do you find Jake Paul's video content entertaining?</h3>
-        <input type="radio" name="q5" value="a" id="q5a">a. Yes<br>
-        <input type="radio" name="q5" value="b" id="q5b">b. No<br>
-   
-        <br><br>
-        <input type="submit" value="Submit Answers">
-      </form>
-      <div id="results"></div>
-    </section>
-  </div>
+    <script src="/JavaScript/background.js"></script>
 
 
 
 
 
-<br>
-
-
-
-</div>
-
-
-
-<!-- This is for the animated background -->
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background"></li> 
-
-
-
-         </div>
-
-
-         <div class="navMenu">
-            <ul class="navigation">
-             <li class="active">
-                 <a href="">
-                  <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
-                     <span class="text">Symptoms</span>
-                 </a>
-             </li>
-             <li>
-                 <a href="#">
-                  <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
-                     <span class="text">Covid-19 Data</span>
-                 </a>
-             </li>
-             <li>
-                 <a href="#">
-                     <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
-                     <span class="text">Closest Facility</span>
-                 </a>
-             </li>
-             <li>
-                 <a href="#">
-                     <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
-                     <span class="text">Trending</span>
-                 </a>
-             </li>
-             <li>
-                 <a href="#">
-                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                     <span class="text">Home</span>
-                 </a>
-             </li>
-         </ul> 
-         </div>
-
-
-
-        </main>
 
 
 
 
+    
+  <li class="background"></li>
+  <li class="background"></li>
+  <li class="background"></li>
+  <li class="background"></li>
+  <li class="background"></li>
+  <li class="background"></li>
+  <li class="background"></li>
+  <li class="background"></li>
+  <li class="background"></li>
+  <li class="background"></li>
 
     <!-- Script for Icons, Must go on every page -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -6,16 +6,16 @@ floatingTileBackground.innerHTML = ` <!-- Every page so we can have the animated
   <div class="circles">
 
     <!-- This is for the animated background -->
+    <li class="background" id="color2"></li>
     <li class="background"></li>
     <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background" id="color2"></li>
     <li class="background"></li>
     <li class="background"></li>
+    <li class="background" id="color2"></li>
     <li class="background"></li>
-    <li class="background"></li>
-    <li class="background"></li>
-    <li class="background"></li>
-    <li class="background"></li>
-    <li class="background"></li>
+    <li class="background" id="color2"></li>
   </div>
 
 </main>
