@@ -129,3 +129,23 @@ align-items: center;
     transform: translateY(10px);
     transition-delay: 0.2s;
 }
+
+.mobile-nav {
+
+    z-index: 999;
+    display: none;
+
+}
+
+
+@media screen and (max-device-width: 912px) {
+
+    .navMenu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+        
+}
