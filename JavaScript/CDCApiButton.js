@@ -55,7 +55,7 @@ function CDCweekly(){
             let summary = document.createElement('p');
             summary.innerHTML = value[1];
             let url = document.createElement('link');
-            url.setAttribute('href', value[2])
+            url.setAttribute('href', value[2]);
             info.appendChild(heading);
             info.appendChild(summary);
             info.appendChild(url);

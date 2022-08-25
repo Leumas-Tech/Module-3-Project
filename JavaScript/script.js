@@ -4,7 +4,7 @@
         let input = document.getElementById('country').value;
         let info = document.getElementById('info');
         // This is the URL for the API 
-        let url = 'https://covid-19-tracking.p.rapidapi.com/v1/world'
+        let url = 'https://covid-19-tracking.p.rapidapi.com/v1/world';
         // This is the regex to replace end of url string.
         let regex = /\w+$/g;
         // If-else statement to check for empty input.
@@ -31,7 +31,7 @@
                 let keys = Object.keys(response);
                 let values = Object.values(response);
                 //Create a Table Row inside Table for Incoming Data
-                let trHeader = document.createElement('tr')
+                let trHeader = document.createElement('tr');
                 trHeader.setAttribute('id', 'Header');
                 //Loop Through Keys in API Object
                 for (let key of keys) {
@@ -110,7 +110,7 @@
                 let summary = document.createElement('p');
                 summary.innerHTML = value[1];
                 let url = document.createElement('link');
-                url.setAttribute('href', value[2])
+                url.setAttribute('href', value[2]);
                 info.appendChild(heading);
                 info.appendChild(summary);
                 info.appendChild(url);
