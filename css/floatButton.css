@@ -60,6 +60,7 @@ border: 3px solid #1f71cf;
   width: 100%; 
   text-align: center; 
   margin-top: 30px;
+  
 }
 
 
@@ -70,6 +71,8 @@ border: 3px solid #1f71cf;
   color: #818181;
   display: block; 
   transition: 0.3s; 
+  overflow: none;
+ margin-bottom:30%;
 }
 
 
