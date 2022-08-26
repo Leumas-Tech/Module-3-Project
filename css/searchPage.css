@@ -1,0 +1,21 @@
+.searchPageSearch{
+    width: 80%;
+    border-radius: 50px;
+    padding: 1vh;
+ margin: 1vh;
+}
+
+.pageTitle{
+    top: 0;
+}
+
+.SearchBtn{
+ 
+    border-radius: 50px;
+    margin: 1vh;
+    padding:1vh;
+}
+.SearchBtn:hover{
+ 
+  border: 3px solid #00dafc;
+}
