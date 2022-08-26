@@ -1,5 +1,5 @@
 
-
+let userinput = document.getElementById("covidSearch").value;
 
 function SearchCovidData() {
     document.getElementById("CovidInfo").style.width = "100%";
