@@ -90,6 +90,7 @@ border: 3px solid #1f71cf;
 
 /* Styling the information in the box */
 h1{
+  color: white;
   font-weight: 600;
 }
 p{

@@ -1,11 +1,9 @@
 function SearchCovidData() {
 
   // Accessing input element
-  let browse = document.getElementById("browse"); //This is the div that contains user input.
+  
   let input = document.getElementById('covidSearch').value; // This is the user input.
   document.getElementById("CovidInfo").style.width = "100%";
-  const contentArea = document.getElementById("overlay - content"); // display div
-
 
   // This is the URL for the API 
   let url = 'https://covid-19-tracking.p.rapidapi.com/v1/world';
