@@ -1,106 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Data</title>
-        <!-- Link for Nav Menu -->
-    <link rel ="stylesheet" href="../1.css/navMenu.css">
-    <!-- Background CSS -->
-    <link rel ="stylesheet" href="../1.css/background.css">
-    <!-- Personal Page CSS -->
-    <link rel ="stylesheet" href="../1.css/searchData.css">
-    <!-- Float Button CSS -->
-    <link rel="stylesheet" href="../1.css/floatButton.css">
-    <!-- Search Page CSS -->
-    <link rel ="stylesheet" href="../1.css/searchPage.css">
-      <!-- All CSS -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Data</title>
+  <!-- Link for Nav Menu -->
+  <link rel="stylesheet" href="../1.css/navMenu.css">
+  <!-- Background CSS -->
+  <link rel="stylesheet" href="../1.css/background.css">
+  <!-- Personal Page CSS -->
+  <link rel="stylesheet" href="../1.css/searchData.css">
+  <!-- Float Button CSS -->
+  <link rel="stylesheet" href="../1.css/floatButton.css">
+  <!-- Search Page CSS -->
+  <link rel="stylesheet" href="../1.css/searchPage.css">
+  <!-- All CSS -->
   <link rel="stylesheet" href="../1.css/all.css">
-    <!-- BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
 <body>
 
 
-    <script src="../3.JavaScript/searchDataAPI.js"></script>
-<!-- Script for the Navigation Menu -->
-<script src="../3.JavaScript/navMenu.js"></script>
-<!-- MUST GO ON EVERY PAGE -->
-<!-- Every page so we can have the animated background, we add a class area to a main and class circles to a div just like follows. And dont forget a bunch of LIs at the bottom. The link to the CSS that i Got this from is here. https://alvarotrigo.com/blog/animated-backgrounds-css/ -->
-<script src="../3.JavaScript/background.js"></script>
+  <script src="../3.JavaScript/searchDataAPI.js"></script>
+  <!-- Script for the Navigation Menu -->
+  <script src="../3.JavaScript/navMenu.js"></script>
+  <!-- MUST GO ON EVERY PAGE -->
+  <!-- Every page so we can have the animated background, we add a class area to a main and class circles to a div just like follows. And dont forget a bunch of LIs at the bottom. The link to the CSS that i Got this from is here. https://alvarotrigo.com/blog/animated-backgrounds-css/ -->
+  <script src="../3.JavaScript/background.js"></script>
 
-    <div class="content">
-      <div class="title">
-        <h1>Covid Express</h1>
-        <h2>Covid Data API</h2>
-      </div>
+  <div class="content">
+    <div class="title">
+      <h1>Covid Express</h1>
+      <h2>Covid Data API</h2>
+    </div>
 
+    <div class="browse">
+      <input type="search" placeholder="Enter desired hospital location..." id="covidSearch" class="searchPageSearch">
 
- 
-
-
-      <div class="browse">
-      <input type="search" placeholder="Enter desired hospital location..." id="covidSearch" class="searchPageSearch">   
-       
-       
-       
-       <button onclick="SearchCovidData()" class="SearchBtn" id="HospitalSearchBtn">Search</button> 
-      </div>
-
-       
-       
-       
-       
-       
-       
-       
-            </div>
-
-<div id="CovidInfo" class="overlay">
-
-  <a href="javascript:void(0)" class="closebtn" onclick="closeCovidData()">&times;</a>
+      <button onclick="SearchCovidData()" class="SearchBtn" id="HospitalSearchBtn">Search</button>
+    </div>
 
 
-  <div class="overlay-content">
-
-<h1>Hello This is Covid Data</h1>
   </div>
 
-</div>
+  <!-- This is the overlay page that will display Data for search -->
+  <div id="CovidInfo" class="overlay">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeCovidData()">&times;</a>
 
 
+    <div class="overlay-content">
+      <table id="covid-Info">
+        <!-- This is where API data is created and displayed. -->
+      </table>
+    </div>
 
+  </div>
 
-
-
-
-
-
-
-
-  
   <!-- This is for the animated background -->
-         <div class="circles">
-             <li class="background" id="color2"></li>
-             <li class="background"></li>
-             <li class="background" id="color2"></li>
-             <li class="background"></li>
-             <li class="background" id="color2"></li>
-             <li class="background"></li>
-             <li class="background"></li>
-             <li class="background" id="color2"></li>
-             <li class="background" id="color2"></li>
-             <li class="background"></li>
-             <li class="background"></li>
-             <li class="background" id="color2"></li>
-             <li class="background"></li>
-      
- 
-<!-- SCRIPT FOR THE FLOAT BUTTON THAT EACH WEEK WILL DISPLAY INFORMATION ON THE CDCS DISEASE OF THE WEEK. -->
-<script src="../3.JavaScript/CDCApiButton.js"></script>
-<!-- Script for Icons, Must go on every page -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <div class="circles">
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+    <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+    <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+  </div>
+
+  <!-- SCRIPT FOR THE FLOAT BUTTON THAT EACH WEEK WILL DISPLAY INFORMATION ON THE CDCS DISEASE OF THE WEEK. -->
+  <script src="../3.JavaScript/CDCApiButton.js"></script>
+  <!-- Script for Icons, Must go on every page -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
