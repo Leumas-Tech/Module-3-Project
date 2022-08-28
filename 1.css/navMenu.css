@@ -8,11 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
+
 justify-content: center;
 width: 100%;
     position: absolute;
-    bottom: -10%;
+    bottom: 0%;
 padding: 2%;
 
 z-index:10;
@@ -22,7 +22,7 @@ z-index:10;
     width: 100%;
     height: 120px;
 box-shadow: 25px 25px 75px rgba(0,0,0,0.25),10px 10px 70px rgba(0,0,0,0.25);
-bottom: -30%;
+bottom: 0%;
 inset: 5px 5px 10px rgba(0,0,0,0.5);
 
 inset: 5px 5px 10px rgba(255,255,255,0.2);
@@ -55,7 +55,7 @@ background: rgb(65, 133, 229);
     border-radius: 50%;
     transition: 0.5s;
 }
-.navigation li.active::before{
+.navigation li:hover{
     background: rgb(white);
     box-shadow: 0 0 5px white,
     0 0 10px white,
