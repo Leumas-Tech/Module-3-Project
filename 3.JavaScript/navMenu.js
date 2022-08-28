@@ -2,18 +2,13 @@ const NavigationMenu = document.createElement('NavigationMenu');
 
 NavigationMenu.innerHTML = `<div id="N" class="navMenu">
         <ul class="navigation">
-         <li class="active">
-             <a href="../index.html">
+         <li>
+             <a href="../2.index.html">
                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                  <span class="text">Home</span>
              </a>
          </li>
-         <li>
-             <a href="../html/SymptomChecker.html">
-                 <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
-                 <span class="text">Symptoms</span>
-             </a>
-         </li>
+       
          <li>
              <a href="../html/searchNearestHospital.html">
                  <span class="icon"><ion-icon name="search-outline"></ion-icon></ion-icon></span>
@@ -21,13 +16,19 @@ NavigationMenu.innerHTML = `<div id="N" class="navMenu">
              </a>
          </li>
          <li>
-             <a href="../html/covidDataSearchPage.html">
+             <a href="../2.html/covidDataSearchPage.html">
                  <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
                  <span class="text">Trending</span>
              </a>
          </li>
+           <li>
+             <a href="../2.html/SymptomChecker.html">
+                 <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
+                 <span class="text">Symptoms</span>
+             </a>
+         </li>
          <li>
-             <a href="../html/AboutCovidAPI.html">
+             <a href="../2.html/AboutCovidAPI.html">
                  <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
                  <span class="text">Symptom Checker</span>
              </a>
@@ -49,5 +50,3 @@ this.classList.add('active');
 }
 list.forEach((item) => 
 item.addEventListener('click', activeNavLink));  
-
-
