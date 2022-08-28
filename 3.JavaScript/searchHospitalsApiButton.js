@@ -35,7 +35,7 @@ function SearchHospitalData() {
 
 
     .catch(error => {
-      let message = document.getElementById('covid-Info');
+      let message = document.getElementById('display');
       message.innerHTML = `Error: ${error}`;
       // message.append(message.innerHTML);
     });
