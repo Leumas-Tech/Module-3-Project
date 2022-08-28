@@ -1,20 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
-    font-family: "Vidaloka";
-}
-
 
 .title{
     float: left;
-    color: black;
-
+    margin: 3%;
 }
 h2{
-    color: black;
     margin: 5%;
-}
-
-body{
-    overflow: hidden;
 }
