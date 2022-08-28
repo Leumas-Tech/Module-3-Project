@@ -1,0 +1,88 @@
+.title h1 {
+    color: blue;
+}
+
+.title h2 {
+    color: blue;
+    font-weight: bold;
+
+}
+
+.title p {
+    color: rgb(10, 136, 71);
+    font-weight: bold;
+}
+
+.container {
+  margin: auto;
+  background: #fff;
+  overflow: auto;
+}
+
+.gallery {
+  margin: 5px;
+  border: 3px solid blue;
+  float: left;
+  width: 150px;
+}
+
+.gallery img {
+  width: 120px;
+  height: auto;
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+.devs {
+  font-size: 30px;
+  text-align: center;
+}
+
+.contact-section {
+    padding: 3em;
+  }
+  
+  .container-contact {
+    margin: 0 auto;
+    margin-top: 10em;
+  }
+  
+  
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+  }
+  .form-group textarea {
+    height: 150px;
+    padding: 1.5em;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .form-group .input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .form-group .btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    background-color: aqua;
+  }
+
+
+  
