@@ -16,32 +16,32 @@ NavigationMenu.innerHTML = `<div id="N" class="navMenu">
          <li>
              <a href="../index.html">
                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                 <span class="text">Home</span>
+                 <span class="text" title="Home">Home</span>
              </a>
          </li>
        
          <li>
              <a href="../2.html/searchNearestHospital.html">
                  <span class="icon"><ion-icon name="navigate-outline"></ion-icon></ion-icon></span>
-                 <span class="text">Search Facilities</span>
+                 <span class="text" title="Hospital Search">Search Facilities</span>
              </a>
          </li>
          <li>
              <a href="../2.html/covidDataSearchPage.html">
                  <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
-                 <span class="text">Trending</span>
+                 <span class="text" title="Covid Data">Trending</span>
              </a>
          </li>
            <li>
              <a href="../2.html/SymptomChecker.html">
                  <span class="icon"><ion-icon name="bandage-outline"></ion-icon></span>
-                 <span class="text">Symptoms</span>
+                 <span class="text" title="Symptom Check">Symptoms</span>
              </a>
          </li>
          <li>
              <a href="../2.html/AboutCovidAPI.html">
                  <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
-                 <span class="text">Symptom Checker</span>
+                 <span class="text" title="About Us">Symptom Checker</span>
              </a>
          </li>
      </ul> 
