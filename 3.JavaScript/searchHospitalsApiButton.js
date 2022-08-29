@@ -13,7 +13,7 @@ function SearchHospitalData() {
   if (input.length == 0) {
     // alert("Please Enter a Valid Hospital Name.");
   } else {
-    url = url.replace(regex, '='+input);
+    url = url.replace(regex, '=' + input);
   }
   console.log(url);
   // API Fetch Code................................
@@ -27,29 +27,37 @@ function SearchHospitalData() {
 
   fetch(url, options)
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(response => {
 
+      //Gather data from API results, get access to display.
+      const myResult = document.getElementById('display');
 
+      let i = 0;
+      // set up while loop to go through array of objects.
+      while (i <= response.length - 1) {
+        let keys = Object.keys(response[i]);
+        let value = Object.values(response[i]);
+        // console.log(`${keys}:${value}`);
+        const section = document.createElement('div');
+        const header = document.createElement('h2');
+        const text = document.createElement('p');
+        header.textContent = keys[i];
+        text.textContent = value[i];
+        section.append(header,text);
+        myResult.appendChild(section);
 
+        i++;
+      }
 
-
-
-    .catch(error => {
-      let message = document.getElementById('display');
-      message.innerHTML = `Error: ${error}`;
-      // message.append(message.innerHTML);
     });
 
-
+  //   .catch(error => {
+  //     let message = document.getElementById('covidInfo');
+  //     message.innerHTML = `Error: ${error}`;
+  //     // message.append(message.innerHTML);
+  // });
 
 }
-
-
-
-
-
-
-
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeData() {
