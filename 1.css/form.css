@@ -1,0 +1,97 @@
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    position:absolute;
+    top: 20%;
+    height: 60vh;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #00dafc;
+    border-radius: 3em;
+    box-shadow: rgba(0,0,0,0.5) 3px 3px 3px;
+
+}
+
+.formContent{
+    position: absolute;
+    top: 15%;
+}
+
+.enterNames{
+    margin-bottom: 3%;
+}
+hr{
+    margin-top: 1vh;
+    color: black
+}
+input{
+    width: 100%;
+    text-align: center;
+    border-radius: 3em;
+    height: 3vh;
+    border: none;
+    box-shadow: rgba(0,0,0,0.5) 3px 3px 3px;
+    background:rgba(255,255,255,0.5);
+
+}
+
+h3{
+    margin-top: 1vh;
+}
+
+.sendForm{
+    width: 100%;
+
+    margin-top: 10%;
+    border-radius: 3em;
+    border: none;
+    background: rgba(255,255,255,0.8);
+    color: black;  
+    padding: 1vh;
+}
+
+.text{
+    float: left;
+}
+.icon{
+    float: right;
+}
+
+button:hover{
+    background: white;
+    color: black;
+    border: solid 1px black;
+
+}
+
+.message{
+    background:rgba(0,0,0,0.0);
+    width: 100%;
+    text-align: center;
+    color: black;
+    z-index: 0;
+    border-radius: 3rem;
+}
+
+
+@media (max-width: 420px) {
+    .formContainer{
+        width: 80%;
+        position: absolute;
+        left: 6%;
+    }
+    .formContent{
+        top: 8%;
+        width: 80%;
+    }
+.content{
+    width: 80%;
+}
+.navMenu{
+    width: 80%;
+    position:absolute;
+    left: 6%;
+}
+}
