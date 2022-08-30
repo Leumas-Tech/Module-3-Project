@@ -87,3 +87,20 @@
   p{
     font-weight: 300;
   }
+
+  .title{
+    position: absolute;
+    top: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 420px) {
+    .title{
+      position: absolute;
+      top: 30%;
+    }
+  }
