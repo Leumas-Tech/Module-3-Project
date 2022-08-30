@@ -7,56 +7,36 @@
 
 body{
     font-family: 'Exo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    top: 0;
 }
 
 
-.context {
+
+.content {
     width: 100%;
-    position: absolute;
-    top:50vh;
     
+   height: 100%;
+
 }
 
-.context h1{
+.content h1{
     text-align: center;
-    color: #fff;
+    color: black;
     font-size: 50px;
 }
-/* This is where you can change the color of the background! */
-/* Pages are identified by order, index is 1, covidData is 5, hospital is 3, symptom is 4, about Us is 2... */
-
-.area1{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
-    height:100vh;
-}
-.area2{
-    background: #115d11;  
-    background: -webkit-linear-gradient(to left, #31cfaa, #0c5108);  
-    width: 100%;
-    height:100vh;
-}
-.area3{
-    background: #9598e0;  
-    background: -webkit-linear-gradient(to left, #1890c8, #1721e6);  
-    width: 100%;
-    height:100vh;
-}
-.area4{
-    background: #d916c5;  
-    background: -webkit-linear-gradient(to left, #cd0e64, #e9860c);  
-    width: 100%;
-    height:100vh;
-}
-.area5{
-    background: #4ec858;  
-    background: -webkit-linear-gradient(to left, #feee0d, #26949e);  
-    width: 100%;
-    height:100vh;
-}
 
 
+.area{
+    /* background:  rgba(28, 28, 28, 0.9);   */
+     background: -webkit-linear-gradient(to left, black, white);  
+     width: 100%;
+
+
+}
 
  .circles{
     position: absolute;
@@ -65,9 +45,29 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    z-index: -1000;
+    
 }
 
- .circles li.background{
+ .circles li.background {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 255, 242, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;   
+
+}
+#color2{
+ 
+    background: black;
+
+} 
+
+
+li.background{
     position: absolute;
     display: block;
     list-style: none;
@@ -79,15 +79,15 @@ body{
     
 }
 
-.circles li:nth-child(1).background {
-    left: 25%;
+.circles li.background:nth-child(1) {
+
     width: 80px;
     height: 80px;
-    animation-delay: 0s;
+    animation-delay: 2s;
 }
 
 
- .circles li:nth-child(2).background{
+ .circles li.background:nth-child(2){
     left: 10%;
     width: 20px;
     height: 20px;
@@ -95,14 +95,14 @@ body{
     animation-duration: 12s;
 }
 
- .circles li:nth-child(3).background{
+ .circles li.background:nth-child(3){
     left: 70%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
 }
 
- .circles li:nth-child(4).background{
+ .circles li.background:nth-child(4){
     left: 40%;
     width: 60px;
     height: 60px;
@@ -110,28 +110,28 @@ body{
     animation-duration: 18s;
 }
 
- .circles li:nth-child(5).background{
+ .circles li.background:nth-child(5){
     left: 65%;
     width: 20px;
     height: 20px;
-    animation-delay: 0s;
+    animation-delay: 1s;
 }
 
- .circles li:nth-child(6).background{
+ .circles li.background:nth-child(6){
     left: 75%;
     width: 110px;
     height: 110px;
     animation-delay: 3s;
 }
 
- .circles li:nth-child(7).background{
+ .circles li.background:nth-child(7){
     left: 35%;
     width: 150px;
     height: 150px;
     animation-delay: 7s;
 }
 
- .circles li:nth-child(8).background{
+ .circles li.background:nth-child(8){
     left: 50%;
     width: 25px;
     height: 25px;
@@ -139,7 +139,7 @@ body{
     animation-duration: 45s;
 }
 
- .circles li:nth-child(9).background{
+ .circles li.background:nth-child(9){
     left: 20%;
     width: 15px;
     height: 15px;
@@ -147,13 +147,15 @@ body{
     animation-duration: 35s;
 }
 
- .circles li:nth-child(10).background{
+ .circles li.background:nth-child(10){
     left: 85%;
     width: 150px;
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
+
 
 @keyframes animate {
 
@@ -170,5 +172,3 @@ body{
     }
 
 }
-
-

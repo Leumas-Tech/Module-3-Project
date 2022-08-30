@@ -1,0 +1,36 @@
+*{
+    padding:0;
+    margin: 0;
+
+}
+
+h1{
+    color: white;
+    padding: 1rem;
+}
+/* This helped me really understand position: i watched videos and they explained how position absolute relates it to the actual page, the black overlay is attacthed to the content div which is attatched to the body so all three needed position absolute, and that allowed us to manipulate top, right, bottom etc along with percentages to move the pieces on the page */
+.blackOverlay{
+    height: 100vh;
+
+    /* color: black; */
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ 
+    width: 100%;
+
+    margin-top: 3%;
+  
+}
+
+.changingText p{
+    font-size: 100%;
+}
+
+.slideLink{
+  color:blue;
+  
+}

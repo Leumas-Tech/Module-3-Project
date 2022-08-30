@@ -5,153 +5,136 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Home | CovidExpress</title>
+  <!-- Background CSS -->
+  <link rel="stylesheet" href="./1.css/background.css">
+  <!-- navMenu CSS -->
+  <link rel="stylesheet" href="./1.css/navMenu.css">
+  <!-- Personal Page CSS -->
+  <link rel="stylesheet" href="./1.css/index.css">
+  <!-- Fade in text CSS -->
+  <link rel="stylesheet" href="./1.css/fadingText.css">
+  <!-- Float Button CSS -->
+  <link rel="stylesheet" href="./1.css/floatButton.css">
+  <!-- All CSS -->
+  <link rel="stylesheet" href="./1.css/all.css">
   <!-- BootStrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <!-- Background CSS -->
-  <link rel="stylesheet" href="./css/background.css">
-  <!-- navMenu CSS -->
-  <link rel="stylesheet" href="./css/navMenu.css">
-  <!-- Personal Page CSS -->
-  <link rel="stylesheet" href="./css/index.css">
-  <!-- searchPAge CSS -->
-  <link rel="stylesheet" href="./css/searchPage.css">
-  <link rel="stylesheet" href="./css/floatButton.css">
 </head>
 
 <body>
+
+  <!-- Script for the Navigation Menu -->
+<div id="N" class="navMenu">
+        <ul class="navigation">
+         <li>
+             <a href="./index.html">
+                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                 <span class="text">Home</span>
+             </a>
+         </li>
+       
+         <li>
+             <a href="./2.html/searchNearestHospital.html">
+                 <span class="icon"><ion-icon name="navigate-outline"></ion-icon></ion-icon></span>
+                 <span class="text">Search Facilities</span>
+             </a>
+         </li>
+         <li>
+             <a href="./2.html/covidDataSearchPage.html">
+                 <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                 <span class="text">Trending</span>
+             </a>
+         </li>
+           <li>
+             <a href="./2.html/SymptomChecker.html">
+                 <span class="icon"><ion-icon name="bandage-outline"></ion-icon></span>
+                 <span class="text">Symptoms</span>
+             </a>
+         </li>
+         <li>
+             <a href="./2.html/AboutCovidAPI.html">
+                 <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                 <span class="text">Symptom Checker</span>
+             </a>
+         </li>
+     </ul> 
+     </div>
+  <!-- MUST GO ON EVERY PAGE -->
   <!-- Every page so we can have the animated background, we add a class area to a main and class circles to a div just like follows. And dont forget a bunch of LIs at the bottom. The link to the CSS that i Got this from is here. https://alvarotrigo.com/blog/animated-backgrounds-css/ -->
-  <!-- I am also using Bootstrap 🙂 -->
+  <script src="./3.JavaScript/background.js"></script>
+  <div class="content">
 
-  <!-- This Class is different on each page to present the different color background.. -->
-  <main class="area1">
-    <!-- This is a mobile navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mobile-nav">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">CovidExpress</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/covidDataSearchPage.html">Covid-19 Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/searchNearestHospital.html">Hospital Search</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/SymptomChecker.html">Symptom Checker</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/AboutCovidAPI.html">About Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="circles">
-      <!-- Now we can put in the header and everything on the other pages -->
-      <br>
-      <!-- This is so the user can type in what theyre seraching for. -->
-      <div class="content">
-        <h1>CovidExpress</h1>
-        <br>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" id="country" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark" onclick="covidData()" type="submit">Search</button>
-        </form>
-        <!-- For on the home page they can select what theyre seraching for to alternate between our API keys -->
-        <p>Browse by City or Country:</p>
-        <div class="btn-group-horizontal" role="group" aria-label="Horizontal button group">
-          <button type="button" class="btn btn-dark">Search Data</button>
-          <button type="button" class="btn btn-dark">Nearby Facilities</button>
-          <button type="button" class="btn btn-dark">Symptom Checker</button>
-        </div>
-        <hr>
-        <br>
-        <div class="glassDisplay">
-        </div>
-        <br>
-      </div>
-      <!-- This is for the animated background -->
-      <li class="background"></li>
-      <li class="background"></li>
-      <li class="background"></li>
-      <li class="background"></li>
-      <li class="background"></li>
-      <li class="background"></li>
-      <li class="background"></li>
-      <li class="background"></li>
-      <li class="background"></li>
-      <li class="background"></li>
+
+    <div class="title">
+      <h1>Covid Express</h1>
+   
     </div>
-  </main>
-  <!-- Page Navigation Starts Here! -->
-  <div class="navMenu">
-    <ul class="navigation">
-      <li class="active">
-        <a href="#">
-          <span class="icon">
-            <ion-icon name="home-outline"></ion-icon>
-          </span>
-          <span class="text">Home</span>
-        </a>
-      </li>
-      <li>
-        <a href="/Module-3-Project/html/covidDataSearchPage.html">
-          <span class="icon">
-            <ion-icon name="medkit-outline"></ion-icon>
-          </span>
-          <span class="text">Covid-19 Data</span>
-        </a>
-      </li>
-      <li>
-        <a href="/Module-3-Project/html/searchNearestHospital.html">
-          <span class="icon">
-            <ion-icon name="search-outline"></ion-icon>
-          </span>
-          <span class="text">Hospital Search</span>
-        </a>
-      </li>
-      <li>
-        <a href="/Module-3-Project/html/SymptomChecker.html">
-          <span class="icon">
-            <ion-icon name="medkit-outline"></ion-icon>
-          </span>
-          <span class="text">Symptom Checker</span>
-        </a>
-      </li>
-      <li>
-        <a href="/Module-3-Project/html/AboutCovidAPI.html">
-          <span class="icon">
-            <ion-icon name="star-outline"></ion-icon>
-          </span>
-          <span class="text">About Us</span>
-        </a>
-      </li>
-    </ul>
+
+
+    <div class="blackOverlay">
+
+   
+        <div class="changingText">
+          <div>
+            <p>
+              Welcome to   <a href="index.html" class="slideLink">Covid Express!</a>
+            </p><br>
+            <p>
+              Explore <a class="slideLink" href="./2.html/covidDataSearchPage.html">Covid Data</a>
+            </p><br>
+            <p>
+              Do I have Covid? Learn <a href = "./2.html/SymptomChecker.html" class ="slideLink">here</a>.
+            </p><br>
+            <p>
+             Lean More  <a href="./2.html/AboutCovidAPI.html" class="slideLink">About Us</a>
+          </p><br>
+          <p>
+            Index through any <a class="slideLink" href="./2.html/searchNearestHospital.html">Hospital</a> in the US!
+        </p>
+      </div>
+    </div>
+
+ 
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
   </div>
-  <div class="floater">
-    <a href="#" class="float">
-      <i class="fa fa-plus my-float"></i>
-    </a>
+  <!-- This is for the animated background -->
+  <div class="circles">
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+    <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
+    <li class="background"></li>
+    <li class="background" id="color2"></li>
+    <li class="background"></li>
   </div>
 
-  <!-- This is the JavaScript script for BootStrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+  <!-- SCRIPT FOR THE FLOAT BUTTON THAT EACH WEEK WILL DISPLAY INFORMATION ON THE CDCS DISEASE OF THE WEEK. -->
+  <script src="./3.JavaScript/CDCApiButton.js"></script>
   <!-- Script for Icons, Must go on every page -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <!-- Script for the Navigation Menu -->
-  <!-- MUST GO ON EVERY PAGE -->
-  <script src="../javaScript/navMenu.js"></script>
+
+  <script src="./3.JavaScript/chandingTextSlideshow.js"></script>
 
 </body>
 
