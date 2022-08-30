@@ -1,5 +1,49 @@
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    border: 1px cyan solid;
+    border-radius: 3em;
+    padding: 3em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    border: 2px solid orange;
+    background: rgba(0,0,0,0.5);
+    border-radius: 3em;
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.5),3px,3px,3px;
+}
+input:focus{
+border: none;
+}
+button{
+    border: 2px solid orange;
+  width: 50%;
+
+  background: rgba(0,0,0,0);
+}
 @media (max-width: 420px) {
-
+.title{
+    position: absolute;
+    top: 13%;
+}
+/* Idk if navMenu is helping here? but it looks fine on mobile */
+.navMenu{
+    position: absolute;
+}
 }
