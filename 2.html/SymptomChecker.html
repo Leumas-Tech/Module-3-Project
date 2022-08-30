@@ -5,64 +5,286 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Symptoms</title>
+    <title>Symptoms Checker</title>
     <!-- Link for Nav Menu -->
-    <link rel="stylesheet" href="../1.css/navMenu.css">
+    <!-- <link rel="stylesheet" href="../1.css/navMenu.css"> -->
     <!-- Background CSS -->
-    <link rel="stylesheet" href="../1.css/background.css">
+    <!-- <link rel="stylesheet" href="../1.css/background.css"> -->
     <!-- Personal Page CSS -->
-    <link rel="stylesheet" href="../1.css/index.css">
+    <!-- <link rel="stylesheet" href="../1.css/index.css"> -->
     <!-- Float Button CSS -->
-    <link rel="stylesheet" href="../1.css/floatButton.css">
+    <!-- <link rel="stylesheet" href="../1.css/floatButton.css"> -->
     <!-- All CSS -->
-    <link rel="stylesheet" href="../1.css/all.css">
+    <!-- <link rel="stylesheet" href="../1.css/all.css"> -->
     <!-- BootStrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
+
     <!-- Script for the Navigation Menu -->
-    <script src="../3.JavaScript/navMenu.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Covid Express</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./searchNearestHospital.html">Search Facilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./covidDataSearchPage.html">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./SymptomChecker.html">Symptoms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./AboutCovidAPI.html">Symptom Checker</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="#cdcUpdates" role="button" id="cdcUpdatesToggleBtn">CDC Updates</a>
+        </div>
+      </nav>
+
+    <!-- <div id="N" class="navMenu">
+        <ul class="navigation">
+            <li>
+                <a href="./index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="./2.html/searchNearestHospital.html">
+                    <span class="icon"><ion-icon name="navigate-outline"></ion-icon></ion-icon></span>
+                    <span class="text">Search Facilities</span>
+                </a>
+            </li>
+            <li>
+                <a href="./2.html/covidDataSearchPage.html">
+                    <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                    <span class="text">Trending</span>
+                </a>
+            </li>
+            <li>
+                <a href="./2.html/SymptomChecker.html">
+                    <span class="icon"><ion-icon name="bandage-outline"></ion-icon></span>
+                    <span class="text">Symptoms</span>
+                </a>
+            </li>
+            <li>
+                <a href="./2.html/AboutCovidAPI.html">
+                    <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                    <span class="text">Symptom Checker</span>
+                </a>
+            </li>
+        </ul> 
+    </div> -->
+    <!-- MUST GO ON EVERY PAGE -->
+
+    <!-- This is for the animated background -->
+    <!-- <div class="circles">
+        <li class="background" id="color2"></li>
+        <li class="background"></li>
+        <li class="background" id="color2"></li>
+        <li class="background"></li>
+        <li class="background" id="color2"></li>
+        <li class="background"></li>
+        <li class="background"></li>
+        <li class="background" id="color2"></li>
+        <li class="background" id="color2"></li>
+        <li class="background"></li>
+        <li class="background"></li>
+        <li class="background" id="color2"></li>
+        <li class="background"></li>
+    </div> -->
+
+    <div class="container">
+        <h1 class="text-center mb-5">
+            Symptom Checker
+        </h1>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                
+
+                <div>
+                    <div class="mb-5">
+                        <label for="input1" class="form-label">Do you have any of these life-threatening symptoms?
+                        </label>
+                        <div>
+                            <ul>
+                                <li>Trouble breathing</li>
+                                <li>Persistent pain or pressure in the chest</li>
+                                <li>New confusion</li>
+                                <li>Inability to wake or stay awake</li>
+                                <li>
+                                    Pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone
+                                </li>
+                            </ul>
+                        </div>
+                        <select class="form-select" id="input1" aria-label="Default select example">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                          </select>
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="input2" class="form-label">In the last two weeks, have you been in close contact with someone who has COVID-19?
+                        </label>
+                        <select class="form-select" id="input2" aria-label="Default select example">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                          </select>
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="input3" class="form-label">In the last 10 days, have you been tested for COVID-19?
+                        </label>
+                        <select class="form-select" id="input3" aria-label="Default select example">
+                            <option value="I have been tested in the last 10 days and my result was positive.">I have been tested in the last 10 days and my result was positive.</option>
+                            <option value="I have been tested in the last 10 days and my result was negative.">I have been tested in the last 10 days and my result was negative.</option>
+                            <option value="I have been tested in the last 10 days and I am waiting for my results.">I have been tested in the last 10 days and I am waiting for my results.</option>
+                            <option value="I have not been tested">I have not been tested.</option>
+                          </select>
+                    </div>
+
+                    <div class="mb-5">
+                        <p>
+                            In the last 10 days, have you experienced any of the symptoms listed below? (check all that apply)
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="symptoms" value="Fever or feeling feverish (such as chills, sweating)" id="symptons01">
+                            <label class="form-check-label" for="symptons01">
+                                Fever or feeling feverish (such as chills, sweating)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="symptoms" value="Cough" id="symptons02">
+                            <label class="form-check-label" for="symptons02">
+                                Cough
+                            </label>
+                          </div>
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="symptoms" value="Shortness of breath or difficulty breathing" id="symptons03">
+                            <label class="form-check-label" for="symptons03">
+                                Shortness of breath or difficulty breathing
+                            </label>
+                          </div>
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="symptoms" value="Fatigue" id="symptons04">
+                            <label class="form-check-label" for="symptons04">
+                                Fatigue
+                            </label>
+                          </div>
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="symptoms" value="Muscle or body aches" id="symptons05">
+                            <label class="form-check-label" for="symptons05">
+                                Muscle or body aches
+                            </label>
+                          </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="symptoms" value="Headache" id="symptons06">
+                                <label class="form-check-label" for="symptons06">
+                                    Headache
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="symptoms" value="New loss of taste or smell" id="symptons07">
+                                <label class="form-check-label" for="symptons07">
+                                    New loss of taste or smell
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="symptoms" value="Sore throat" id="symptons08">
+                                <label class="form-check-label" for="symptons08">
+                                    Sore throat
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="symptoms" value="Congestion or runny nose" id="symptons09">
+                                <label class="form-check-label" for="symptons09">
+                                    Congestion or runny nose
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="symptoms" value="Nausea or vomiting" id="symptons10">
+                                <label class="form-check-label" for="symptons10">
+                                    Nausea or vomiting
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="symptoms" value="Diarrhea" id="symptons11">
+                                <label class="form-check-label" for="symptons11">
+                                    Diarrhea
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="symptoms" value="No symptoms" id="symptons12">
+                                <label class="form-check-label" for="symptons12">
+                                    No symptoms
+                                </label>
+                            </div>
+
+                    </div>
+
+                    <p class="text-center">
+                        <button type="button" id="symptonBtn" class="btn btn-primary">Submit</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vertically centered scrollable modal -->
+    <div class="modal fade"  id="cdcUpdates" aria-hidden="true" aria-labelledby="cdcUpdatesToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cdcUpdatesToggleLabel">Weekly CDC updates</h5>
+                <button type="button" class="btn-close" id="cdcUpdateCloseBtn"></button>
+              </div>
+              <div class="modal-body" id="cdcInfo">
+                
+              </div>
+              <div class="modal-footer">
+                
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- Script for the Navigation Menu -->
+    <!-- <script src="../3.JavaScript/navMenu.js"></script> -->
     <!-- MUST GO ON EVERY PAGE -->
     <!-- Every page so we can have the animated background, we add a class area to a main and class circles to a div just like follows. And dont forget a bunch of LIs at the bottom. The link to the CSS that i Got this from is here. https://alvarotrigo.com/blog/animated-backgrounds-css/ -->
-    <script src="../3.JavaScript/background.js"></script>
-    <div class="content">
-        <div class="title">
-            <h1>Covid Express</h1>
-            <h2>Symptom Checker</h2>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    <!-- This is for the animated background -->
-    <div class="circles">
-        <li class="background" id="color2"></li>
-        <li class="background"></li>
-        <li class="background" id="color2"></li>
-        <li class="background"></li>
-        <li class="background" id="color2"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background" id="color2"></li>
-        <li class="background" id="color2"></li>
-        <li class="background"></li>
-        <li class="background"></li>
-        <li class="background" id="color2"></li>
-        <li class="background"></li>
-    </div>
+    <!-- <script src="../3.JavaScript/background.js"></script> -->
 
     <!-- SCRIPT FOR THE FLOAT BUTTON THAT EACH WEEK WILL DISPLAY INFORMATION ON THE CDCS DISEASE OF THE WEEK. -->
-    <script src="../3.JavaScript/CDCApiButton.js"></script>
+    <!-- <script src="../3.JavaScript/CDCApiButton.js"></script> -->
+    <!-- Symtom Checker Js-->
+    <script src="../3.JavaScript/symptom.js"></script>
     <!-- Script for Icons, Must go on every page -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -27,49 +27,49 @@ CDCAPI.innerHTML = `
 document.body.appendChild(CDCAPI);
 
 
-  let CDCbutton = document.getElementById("CDCBTN");
+let CDCbutton = document.getElementById("CDCBTN");
 
-  CDCbutton.addEventListener("click", function(){
+CDCbutton.addEventListener("click", function () {
 
-      const display = document.getElementById('myNav');
-      const info = document.getElementById('cdcInfo');
-            const options = {
-                method: 'GET',
-                headers: {
-                    'X-RapidAPI-Key': 'fdc2bfa2c7msh9bbefe74000b7fbp134f42jsn20bc45c4a096',
-                    'X-RapidAPI-Host': 'cdc-disease-or-condition-of-the-week.p.rapidapi.com'
-                }
-            };
+  const display = document.getElementById('myNav');
+  const info = document.getElementById('cdcInfo');
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'fdc2bfa2c7msh9bbefe74000b7fbp134f42jsn20bc45c4a096',
+      'X-RapidAPI-Host': 'cdc-disease-or-condition-of-the-week.p.rapidapi.com'
+    }
+  };
 
-            fetch('https://cdc-disease-or-condition-of-the-week.p.rapidapi.com/', options)
-                .then(response => response.json())
-                .then(response => {
-                  let key = Object.keys(response);
-                  let value = Object.values(response);
-                  //  This creates the H1 element to Append the Title of the CDC condition.
-                  let heading = document.createElement('h1');
-                  heading.setAttribute('id', 'title');
-                  heading.innerHTML = value[0];
-                  //  This creates the Paragraph element to Append the Summary of the CDC condition.
-                  let summary = document.createElement('p');
-                  summary.setAttribute('id', 'summary');
-                  summary.innerHTML = value[1];
-                  //  This creates the Link element to send users to the CDC's page on current condition. 
-                  let url = document.createElement('a');
-                  url.setAttribute('id', 'link');
-                  url.setAttribute('href', value[2]);
-                  url.setAttribute('target', '_blank');
-                  url.innerHTML = "CDC Link Here!";
-                  // Appending all information to the HTML.
-                  info.appendChild(heading);
-                  info.appendChild(summary);
-                  info.appendChild(url);
-                  console.log(response);
-                })
-                .catch(err => console.error(err));
+  fetch('https://cdc-disease-or-condition-of-the-week.p.rapidapi.com/', options)
+    .then(response => response.json())
+    .then(response => {
+      let key = Object.keys(response);
+      let value = Object.values(response);
+      //  This creates the H1 element to Append the Title of the CDC condition.
+      let heading = document.createElement('h1');
+      heading.setAttribute('id', 'title');
+      heading.innerHTML = value[0];
+      //  This creates the Paragraph element to Append the Summary of the CDC condition.
+      let summary = document.createElement('p');
+      summary.setAttribute('id', 'summary');
+      summary.innerHTML = value[1];
+      //  This creates the Link element to send users to the CDC's page on current condition. 
+      let url = document.createElement('a');
+      url.setAttribute('id', 'link');
+      url.setAttribute('href', value[2]);
+      url.setAttribute('target', '_blank');
+      url.innerHTML = "CDC Link Here!";
+      // Appending all information to the HTML.
+      info.appendChild(heading);
+      info.appendChild(summary);
+      info.appendChild(url);
+      console.log(response);
+    })
+    .catch(err => console.error(err));
 
-  });
-// }
+});
+//}
 
 /* Open when someone clicks on the span element */
 function openNav() {
