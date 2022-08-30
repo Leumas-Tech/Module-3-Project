@@ -48,6 +48,7 @@ border-radius: 50px
 .desc {
 padding: 10px;
 text-align: center;
+color: blue;
 }
 
 .devs {
@@ -61,14 +62,45 @@ margin-left: 1vh;
 
 .contact-section {
   padding: 3em;
+  width: 100vw;
+  color: rgb(18, 58, 235);
+}
+
+.contact-section {
+  padding: 3em;
 }
 
 .container-contact {
   margin: 0 auto;
-  margin-top: 10em;
+  display: flex;
+  align-items: center;
+  color: blue;
 }
 
+.container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.contact-heading h2 {
+  font-size: 2em;
+  color: rgb(10, 29, 227);
+  text-align: center;
+}
+
+.container-contact {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.btn-submit :hover {
+  color: aqua;
+}
 
 .form-group {
   display: flex;
@@ -80,8 +112,8 @@ margin-left: 1vh;
   height: 150px;
   padding: 1.5em;
   background: none;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #1109e8;
+  color: #0f100f;
 }
 
 .form-group .input {
@@ -89,8 +121,8 @@ margin-left: 1vh;
   margin-bottom: 1em;
   background: none;
   border: none;
-  border-bottom: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #1109e8;
+  color: #0d0e0d;
 }
 
 .form-group .btn-submit {
@@ -99,8 +131,10 @@ margin-left: 1vh;
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
-  background-color: aqua;
+  background-color: rgb(18, 162, 224);
+  
 }
+
 
 .ourText{
   position: absolute;
