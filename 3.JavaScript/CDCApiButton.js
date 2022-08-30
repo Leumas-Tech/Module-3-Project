@@ -44,19 +44,27 @@ document.body.appendChild(CDCAPI);
             fetch('https://cdc-disease-or-condition-of-the-week.p.rapidapi.com/', options)
                 .then(response => response.json())
                 .then(response => {
-                    let key = Object.keys(response);
-                    let value = Object.values(response);
-                    
-                    let heading = document.createElement('h1');
-                    heading.innerHTML = value[0];
-                    let summary = document.createElement('p');
-                    summary.innerHTML = value[1];
-                    let url = document.createElement('link');
-                    url.setAttribute('href', value[2]);
-                    info.appendChild(heading);
-                    info.appendChild(summary);
-                    display.appendChild(info);
-                    console.log(response);
+                  let key = Object.keys(response);
+                  let value = Object.values(response);
+                  //  This creates the H1 element to Append the Title of the CDC condition.
+                  let heading = document.createElement('h1');
+                  heading.setAttribute('id', 'title');
+                  heading.innerHTML = value[0];
+                  //  This creates the Paragraph element to Append the Summary of the CDC condition.
+                  let summary = document.createElement('p');
+                  summary.setAttribute('id', 'summary');
+                  summary.innerHTML = value[1];
+                  //  This creates the Link element to send users to the CDC's page on current condition. 
+                  let url = document.createElement('a');
+                  url.setAttribute('id', 'link');
+                  url.setAttribute('href', value[2]);
+                  url.setAttribute('target', '_blank');
+                  url.innerHTML = "CDC Link Here!";
+                  // Appending all information to the HTML.
+                  info.appendChild(heading);
+                  info.appendChild(summary);
+                  info.appendChild(url);
+                  console.log(response);
                 })
                 .catch(err => console.error(err));
 
@@ -71,4 +79,15 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+  // Accessing HTML created for API, 
+
+  const heading = document.getElementById('title');
+  const summary = document.getElementById('summary');
+  const url = document.getElementById('link');
+  // CLoses window.
+
+  // This code will delete elements when window is closed.
+  heading.remove();
+  summary.remove();
+  url.remove();
 }
