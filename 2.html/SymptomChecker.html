@@ -9,11 +9,12 @@
     <!-- Link for Nav Menu -->
     <link rel="stylesheet" href="../1.css/navMenu.css">
     <!-- Background CSS -->
-    <link rel="stylesheet" href="../1.css/background.css">
-    <!-- Personal Page CSS -->
-    <link rel="stylesheet" href="../1.css/index.css">
+    <link rel="stylesheet" href="../1.css/background.css">  
     <!-- Float Button CSS -->
     <link rel="stylesheet" href="../1.css/floatButton.css">
+    <!-- Personal Page CSS -->
+    <link rel="stylesheet" href="../1.css/symptomChecker.css">
+  
     <!-- All CSS -->
     <link rel="stylesheet" href="../1.css/all.css">
     <!-- BootStrap -->
@@ -28,17 +29,36 @@
     <!-- Every page so we can have the animated background, we add a class area to a main and class circles to a div just like follows. And dont forget a bunch of LIs at the bottom. The link to the CSS that i Got this from is here. https://alvarotrigo.com/blog/animated-backgrounds-css/ -->
     <script src="../3.JavaScript/background.js"></script>
     <div class="content">
-        <div class="title">
-            <h1>Covid Express</h1>
-            <h2>Symptom Checker</h2>
-        </div>
+
+
+        <div class="grid">
+            <div id="quiz">
+              <h1>Symptom Checker</h1>
+              <hr id="hr-top">
+        
+              <p id="question"></p>
+        
+              <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+              </div>
+        
+
+            </div>
+          </div>
+          <script src="quiz_controller.js"></script>
+          <script src="question.js"></script>
+          <script src="app.js"></script>
+          <script src="/Module-3-Project/3.JavaScript/symptomChecker.js"></script>
 
 
 
-
-
-
-
+<!-- <div class="result">
+    <h3>You are possibly terminally sick</h3>
+    <p>Please navigate to the nearest hospital page <a href="..//2.html/searchNearestHospital.html">here</a></p>
+</div> -->
 
 
 

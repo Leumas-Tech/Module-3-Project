@@ -44,6 +44,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 20vh;
+  
 }
 
 .buttons{
@@ -54,7 +55,7 @@
     bottom: 40%;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 420px) {
     .title{
         position: absolute;
         top: 35%;
